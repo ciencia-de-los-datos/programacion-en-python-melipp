@@ -33,6 +33,7 @@ def pregunta_01():
     suma=0
     for lista in datos:
         suma += int(lista[1])
+        
         return suma
 
 
@@ -75,6 +76,7 @@ def pregunta_03():
     datos_suma=[]
     for i, j in itertools.groupby(sorted(datos), lambda x : x[0]):
         datos_suma.append((i, sum(int(x[1]) for x in j)))
+        
         return datos_suma
 
 
@@ -198,8 +200,8 @@ def pregunta_07():
 
     for i, j in itertools.groupby(sorted(columnas, key = lambda x: x[1]), lambda x: x[1]):
         new_group.append((int(i), [x[0] for x in j]))
-
-    return new_group
+        
+        return new_group
 
 
 def pregunta_08():
@@ -293,6 +295,8 @@ def pregunta_10():
         col4 = len(x[1].split(","))
         col5 = len(x[2].split(","))
         conteo.append((x[0],col4,col5))
+        
+        return conteo
 
 
 def pregunta_11():
