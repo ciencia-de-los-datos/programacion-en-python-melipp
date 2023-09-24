@@ -30,11 +30,11 @@ def pregunta_01():
     214
 
     """
-    suma=0
+    suma = 0
     for lista in datos:
         suma += int(lista[1])
-        
-        return suma
+    
+    return suma
 
 
 def pregunta_02():
